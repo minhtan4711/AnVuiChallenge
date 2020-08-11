@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas'); //lay doi tuong
+        var context = canvas.getContext('2d'); //chon doi tuong ve 2d
+
+        context.beginPath(); //khai bao duong thang moi
+        context.lineWidth = 20; //do rong duong thang
+        context.strokeStyle = 'blue'; //set mau cho duong thang
+        context.lineCap = 'square'; // dinh dang hai dau duong thang(round, butt, square)
+        context.moveTo(10, 10); //diem bat dau
+        //ve duong thang noi tiep trong canvas
+        context.lineTo(390, 10);
+        context.lineTo(20, 190); //diem ket thuc
+        context.lineTo(390, 190);
+        context.stroke(); //tien hanh ve
+
+
+
+
+    </script>
+</body>
+
+</html>

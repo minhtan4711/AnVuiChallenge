@@ -1,0 +1,32 @@
+.options {
+    list-style-type: none;
+}
+.selected {
+    width: 120px;
+    height: 40px;
+    margin-top: 15px;
+    background-color: #eee;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 600;
+}
+.custom-select {
+    position: relative;
+
+}
+.options {
+    display: none;
+    position: absolute;
+    border: 1px solid #333;
+    width: 130px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    left: 25%;
+    top: -38%;
+}

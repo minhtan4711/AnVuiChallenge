@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="practiceDOM2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" id="name" name="name" onkeyup="check()">
+                </td>
+                <td>
+                    <div id="z-name"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="text" id="mail" name="email" onkeyup="check()">
+                </td>
+                <td>
+                    <div id="z-mail"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" id="password" name="password" onkeyup="check()">
+                </td>
+                <td>
+                    <div id="z-password"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td>
+                    <input type="password" id="cpassword" name="cpassword" onkeyup="passwordCheck()">
+                </td>
+                <td>
+                    <div id="z-cpassword"></div>
+                </td>
+            </tr>
+        </table>
+        <input type="button" name="submit" value="Submit">
+    </div>
+    <script src="practiceDOM2.js"></script>
+</body>
+</html>

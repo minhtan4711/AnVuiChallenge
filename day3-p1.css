@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.title {
+    width: 100%;
+    padding-bottom: 8%;
+    background-color: #b1a38c;
+    position: relative;
+}
+.title .text {
+    color: teal;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15%;
+}
+.back1 {
+    background-color: #5d4639;
+    padding-bottom: 12%;
+}
+.back2 {
+    background-color: #b1a38c;
+    padding-bottom: 80%;
+}

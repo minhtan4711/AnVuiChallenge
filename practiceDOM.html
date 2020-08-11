@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="practiceDOM.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper-content">
+
+            <form action="#">
+
+                <div class="form-group">
+
+                    <select name="country" id="">
+                        <option value="hanoi">Ha Noi</option>
+                        <option value="hcm">Ho Chi Minh</option>
+                        <option value="hue" selected>Hue</option>
+                    </select>
+
+                </div>
+            </form>
+
+            <h1>Seperate</h1>
+
+            <form action="#">
+
+                <div class="form-group">
+
+                    <select name="country2" id="">
+                        <option value="hanoi2" selected>Ha Noi 2</option>
+                        <option value="hcm2">Ho Chi Minh 2</option>
+                        <option value="hue2">Hue 2</option>
+                        <option value="danang2">Da Nang 2</option>
+                    </select>
+                <!-- <div class="custom-select">
+                        <div class="selected"></div>
+                        <ul class="options">
+                            <li value="hanoi2">Ha Noi 2</li>
+                            <li value="hcm2">Ho Chi Minh 2</li>
+                            <li value="hue2">Hue 2</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script src="practiceDOM.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    Phần hiệu ứng thì user sẽ thấy qua thẻ div,.. ngoài thẻ select
+    Phần hoạt động thì phải ràng buộc dữ liệu 2 chiều từ thao tác của người dùng từ thẻ select sang thẻ div 
+    Thông qua form thì mới gửi được dữ liệu lên server 
+-->

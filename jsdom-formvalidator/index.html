@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>DOM Basic - Form Validator</title>
+        <meta name="description" content="">
+    </head>
+    <body>
+
+        <!-- Add your site or application content here -->
+        
+        <table border="1px">
+            <tr><td>Tên:</td><td><input type="text" name="name" id="name" onkeyup="check()" /></td><td><div id="z-name"></div></td></tr>
+            <tr><td>Email:</td><td><input type="text" name="email" id="email" onkeyup="check()" /></td><td><div id="z-email"></div></td></tr>
+            <tr><td>Mật khẩu:</td><td><input type="text" name="password" id="password" onkeyup="check()" /></td><td><div id="z-password"></div></td></tr>
+            <tr><td>Xác nhận mật khẩu:</td><td><input type="text" name="cpassword" id="cpassword" onkeyup="password()" /></td><td><div id="z-cpassword"></div></td></tr>
+        </table>
+        
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
