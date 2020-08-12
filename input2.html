@@ -1,0 +1,51 @@
+<!--in ra các số nguyên tố từ 1 đến số vừa nhập vào-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            Nhập số <input type="text" id="number" />
+            <input type="button" value="In kết quả" onclick="printPrimeNumber()" />
+            <div id="result">
+
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function checkPrimeNumber(number) {
+            var flag = true;
+            if (number <= 2) {
+                flag = false;
+            } else {
+                for (var i = 2; i < number; i++) {
+                    if (number % i === 0) {
+                        flag = false;
+                        break;
+                    }
+                }
+            }
+            return flag;
+        }
+        function printPrimeNumber() {
+            var inputNumber = document.getElementById("number").value
+            inputNumber = parseInt(inputNumber);
+            var res = '';
+            for (var i = 1; i <= inputNumber; i++) {
+                if (checkPrimeNumber(i)) {
+                    res += i + ' <br/>';
+                    document.getElementById("result").innerHTML = res;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

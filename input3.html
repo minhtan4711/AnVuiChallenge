@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        div {
+            text-align: center;
+            width: 100px;
+            padding: 15px;
+            margin: 10px;
+            color: white;
+            background-color: #333;
+        }
+    </style>
+
+    <div>Nút 1</div>
+    <div>Nút 2</div>
+    <div>Nút 3</div>
+    <div>Nút 4</div>
+    <div>Nút 5</div>
+    <div>Nút 6</div>
+    <div>Nút 7</div>
+    <div>Nút 8</div>
+    <div>Nút 9</div>
+    <div>Nút 10</div>
+    <button onclick="changeBg()">Change Background Color</button>
+    <script>
+        function changeBg() {
+            var divs = document.getElementsByTagName("div");
+            for (var i = 0; i < divs.length; i++) {
+                if (i % 2 === 1) {
+                    divs[i].style.backgroundColor = 'red';
+                } else if (i % 2 === 0) {
+                    divs[i].style.backgroundColor = 'blue';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
